@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d81e4f3bb5214d338bf080af9e615aa6" Name="Diagram1">
+        <EntityTypeShape EntityType="LanguageModel.Client" Width="1.5" PointX="0.75" PointY="7.125" />
+        <EntityTypeShape EntityType="LanguageModel.ClientService" Width="1.5" PointX="3" PointY="2.375" />
+        <EntityTypeShape EntityType="LanguageModel.ClientServiceDocument" Width="1.5" PointX="5.25" PointY="3" />
+        <EntityTypeShape EntityType="LanguageModel.Gender" Width="1.5" PointX="1.5" PointY="12" />
+        <EntityTypeShape EntityType="LanguageModel.Service" Width="1.5" PointX="0.75" PointY="2.5" />
+        <EntityTypeShape EntityType="LanguageModel.ServicePhoto" Width="1.5" PointX="3" PointY="6.625" />
+        <EntityTypeShape EntityType="LanguageModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="5.75" />
+        <EntityTypeShape EntityType="LanguageModel.Tag" Width="1.5" PointX="3" PointY="15" />
+        <EntityTypeShape EntityType="LanguageModel.ClientList" Width="1.5" PointX="7.75" PointY="0.75" />
+        <EntityTypeShape EntityType="LanguageModel.vw_ClientDetails" Width="1.5" PointX="7.75" PointY="5.75" />
+        <AssociationConnector Association="LanguageModel.FK_Client_Gender" />
+        <AssociationConnector Association="LanguageModel.FK_ClientService_Client" />
+        <AssociationConnector Association="LanguageModel.FK_ClientService_Service" />
+        <AssociationConnector Association="LanguageModel.FK_ClientServiceDocument_ClientService" />
+        <AssociationConnector Association="LanguageModel.FK_ServicePhoto_Service" />
+        <AssociationConnector Association="LanguageModel.TagClient" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
