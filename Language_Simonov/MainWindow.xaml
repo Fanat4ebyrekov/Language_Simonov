@@ -81,7 +81,7 @@
                     <DataGridTextColumn Header="Дата рождения" Width="100" Binding="{Binding Birthday}"/>
                     <DataGridTextColumn Header="Телефон" Width="100" Binding="{Binding NumberPhone}"/>
                     <DataGridTextColumn Header="Email" Width="100" Binding="{Binding Email}"/>
-                    <DataGridTextColumn Header="Дата добавления" Width="*" Binding="{Binding DateRegistration}"/>
+                    <DataGridTextColumn Header="Дата добавления" Width="*" Binding="{Binding Client.DateRegistration}"/>
                     <!--<DataGridTextColumn Header="Дата последнего посещения" Width="180" Binding="{Binding ID}"/>
                     <DataGridTextColumn Header="Кол-во посещений" Width="120" Binding="{Binding ID}"/>
                     <DataGridTextColumn Header="Список тегов" Width="100" Binding="{Binding ID}"/>-->
