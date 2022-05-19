@@ -65,28 +65,24 @@
                       FontFamily="Comic Sans MS"
                 />
         </StackPanel>
-        <ListView Grid.Row="2">
-            <DataGrid
-            x:Name="AllInformation"
-            Height="350"
-            Width="800"
-            AutoGenerateColumns="False"
-            IsReadOnly="True">
-                <DataGrid.Columns >
-                    <DataGridTextColumn Header="ID" Width="30" Binding="{Binding ID}"/>
-                    <DataGridTextColumn Header="Пол" Width="80" Binding="{Binding Gender.GenderName}"/>
-                    <DataGridTextColumn Header="Имя" Width="100" Binding="{Binding LastName}"/>
-                    <DataGridTextColumn Header="Фамилия" Width="100" Binding="{Binding FirstName}"/>
-                    <DataGridTextColumn Header="Отчество" Width="100" Binding="{Binding Patronymic}"/>
-                    <DataGridTextColumn Header="Дата рождения" Width="100" Binding="{Binding Birthday}"/>
-                    <DataGridTextColumn Header="Телефон" Width="100" Binding="{Binding NumberPhone}"/>
-                    <DataGridTextColumn Header="Email" Width="100" Binding="{Binding Email}"/>
-                    <DataGridTextColumn Header="Дата добавления" Width="*" Binding="{Binding Client.DateRegistration}"/>
-                    <!--<DataGridTextColumn Header="Дата последнего посещения" Width="180" Binding="{Binding ID}"/>
-                    <DataGridTextColumn Header="Кол-во посещений" Width="120" Binding="{Binding ID}"/>
-                    <DataGridTextColumn Header="Список тегов" Width="100" Binding="{Binding ID}"/>-->
-                </DataGrid.Columns>
-            </DataGrid>
+        <ListView Grid.Row="2"
+                  x:Name="AllInformation">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="ID" DisplayMemberBinding="{Binding ID}"/>
+                    <GridViewColumn Header="Пол" DisplayMemberBinding="{Binding GenderName}"/>
+                    <GridViewColumn Header="Имя" DisplayMemberBinding="{Binding LastName}"/>
+                    <GridViewColumn Header="Фамилия" DisplayMemberBinding="{Binding FirstName}"/>
+                    <GridViewColumn Header="Отчество" DisplayMemberBinding="{Binding Patronymic}"/>
+                    <GridViewColumn Header="День рождения" DisplayMemberBinding="{Binding Birthday}"/>
+                    <GridViewColumn Header="Фото" DisplayMemberBinding="{Binding PhotoClient}"/>
+                    <GridViewColumn Header="Почта" DisplayMemberBinding="{Binding Email}"/>
+                    <GridViewColumn Header="Дата регистрации" DisplayMemberBinding="{Binding DateRegisration}"/>
+                    <GridViewColumn Header="Посл. визит" DisplayMemberBinding="{Binding LastVisit}"/>
+                    <GridViewColumn Header="Кол-во визитов" DisplayMemberBinding="{Binding CountVisit}"/>
+                    <GridViewColumn Header="Tag" DisplayMemberBinding="{Binding Tags}"/>
+                </GridView>
+            </ListView.View>
         </ListView>
         
         <StackPanel Grid.Row="3"

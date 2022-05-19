@@ -25,7 +25,7 @@ namespace Language_Simonov
         public MainWindow()
         {
             InitializeComponent();
-            AllInformation.ItemsSource = context.Client.ToList();
+            AllInformation.ItemsSource = context.ClientList.ToList();
         }
     }
 }
